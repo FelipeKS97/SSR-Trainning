@@ -6,6 +6,9 @@
   "repository": "https://github.com/FelipeKS97/SSR-Trainning.git",
   "author": "Felipe Cavalcanti <felipecavalcanti100@gmail.com>",
   "license": "MIT",
+  "scripts": {
+    "dev:build:server": "webpack --config webpack.server.js"
+  },
   "dependencies": {
     "axios":"0.16.2",
     "babel-cli": "6.26.0",
