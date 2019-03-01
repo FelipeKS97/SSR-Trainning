@@ -1,10 +1,8 @@
-import { get } from 'axios';
-
 export const FETCH_USERS = 'FETCH_USERS';
 
-export const fetchUsers = () => async dispatch => {
+export const fetchUsers = () => async (dispatch, getState, api) => {
     try {
-        const res = await get('http://react-ssr-api.herokuapp.com/users');
+        const res = await api.get('/users');
 
         dispatch({
             type: FETCH_USERS,
