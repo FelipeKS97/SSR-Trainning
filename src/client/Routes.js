@@ -7,12 +7,10 @@ export default [
     {
         ...HomePage,
         path: '/',
-        component: HomePage,
         exact: true
     },
     {
         ...UsersListPage,
         path: '/users',
-        component: UsersListPage,
     }
 ]
