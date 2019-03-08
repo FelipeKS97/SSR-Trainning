@@ -30,7 +30,7 @@ export const fetchCurrentUser = () => async (dispatch, getState, api) => {
 }
 
 
-export const fetchAdmin = () => async (dispatch, getState, api) => {
+export const fetchAdmins = () => async (dispatch, getState, api) => {
     try {
         const res = await api.get('/admins');
 
